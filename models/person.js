@@ -27,3 +27,4 @@ const personschema = new mongoose.Schema({
 });
 const Person =mongoose.model('Person',personschema);
 module.exports=Person;
+// dhatt teri mkc
