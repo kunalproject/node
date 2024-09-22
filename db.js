@@ -1,7 +1,10 @@
-const mongoose =require('mongoose');
-const mongo_url="mongodb://localhost:27017/hotel";
 
-mongoose.connect(mongo_url,{
+const mongoose =require('mongoose');
+// const mongo_url="mongodb://localhost:27017/hotel";
+require('dotenv').config();
+
+const atlas_url =process.env.MONGODB_URL
+mongoose.connect(atlas_url,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 })
